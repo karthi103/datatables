@@ -36,7 +36,6 @@ function getDatatablesConf(ajaxUrl, pageSize, timeout, language, buildColumnDefs
         },
         "oLanguage": {
             "sSearch": "",
-            "sProcessing": "<img src='/images/spinner.gif'> ",
             "sInfo": "<strong>"+language.info+"</strong>",
             "sInfoEmpty":"<strong>"+ language.emptyInfo+"</strong>",
             "sEmptyTable":language.emptyTable,
