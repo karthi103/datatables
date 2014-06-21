@@ -1,0 +1,93 @@
+#exportToExcel {
+    float: right;
+    margin-bottom: 10px;
+}
+form {
+    clear: both;
+}
+.top {
+    margin-bottom: 10px;
+}
+.bottom {
+    margin-top: 10px
+}
+.ui-tabs .ui-tabs-nav {
+    margin-top: -33px
+}
+.navigate-list {
+    float: right;
+    margin-right: 5px;
+}
+.colselect, col-select {
+    vertical-align: top;
+}
+span.load {
+    background: url("../../images/json.gif") no-repeat 0 0;
+    float: left;
+    height: 16px;
+    margin: 3px 10px 0 0;
+    width: 16px;
+}
+.nav-text {
+    display: inline-block;
+    font-weight: bold;
+    padding: 0 5px;
+    vertical-align: middle;
+}
+.resend-confirmation, .deny-registrant {
+    margin-left: 7px;
+}
+.table-data {
+    border-color:  #CCC;
+    width: 99.5%;
+}
+.dim {
+    background: #FFF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 100%;
+    opacity: .4;
+    position: absolute;
+    width: 100%;
+}
+.page {
+    position: relative;
+}
+#automaticApproval .tab-list-tabs {
+    display: none;
+}
+
+/* IE Styles */
+
+.lt-ie10 .navigate-list .col-select {
+    vertical-align: middle;
+}
+.lt-ie9 .navigate-list .nav .btn-bg {
+    height: 17px;
+}
+.lt-ie9 .navigate-list .col-select {
+    vertical-align: -40%;
+}
+.lt-ie9 .dim {
+    filter: alpha(opacity = 40);
+}
+.lt-ie9 .nav-text {
+    vertical-align: baseline;
+}
+.lt-ie9 .nav input {
+    height: 13px
+}
+.lt-ie8 .deny-registrant,
+.lt-ie8 .approve-registrant,
+.lt-ie8 .cancel-registrant,
+.lt-ie8 .resend-confirmation {
+    float: left;
+}
+.lt-ie8 .table-data {
+    clear: both;
+    position: relative;
+}
+.lt-ie8 .navigate-list .nav .btn-bg {
+    height: 16px;
+}

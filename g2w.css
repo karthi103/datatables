@@ -1,0 +1,271 @@
+.no-js #noJSWarning {
+    margin-top: 10px;
+}
+.no-js .header {
+    padding-top: 0;
+}
+.link-arrow {
+    color: #06C;
+    font-size: 8px;
+    margin-right: 10px;
+    padding-left: 1px;
+    vertical-align: 10%;
+}
+ul.bulleted {
+    margin: 10px 0 20px;
+}
+ul.bulleted li {
+    list-style: disc inside none;
+    padding-left: 10px;
+}
+ul.bulleted li span {
+    color: #999;
+}
+.center {
+    text-align: center;
+}
+.g2w .col-select, .g2w .col-select:hover {
+    color: #333;
+}
+.g2w .ui-tabs .ui-state-active a {
+    color: #000;
+}
+.back-link {
+    color: #06C;
+}
+.back-link:hover {
+    text-decoration: none;
+}
+.springMessage {
+    display: none;
+}
+.readonly {
+    cursor: pointer;
+}
+.clear {
+    clear: both;
+}
+.isOver {
+    color: #C6C6C6;
+}
+.remove {
+    background: url( "../../images/remove.png" ) 0 0 no-repeat;
+    cursor: pointer;
+    display: block;
+    line-height: 13px;
+    margin-top: 4px;
+    text-indent: -9999px;
+    width: 20px;
+}
+.remove:hover {
+    background-position: 0 -17px;
+}
+input[type="text"].inline-error, textarea.inline-error {
+    background-color: #FFF0F0;
+    background-image: none;
+    border-color: #D84040;
+    color: #000;
+}
+.form-row input[type="text"], .form-row select, .form-row input[type="email"], .form-row input[type="password"] {
+    font-size: 11px;
+}
+.form-row textarea {
+    font-size: 12px;
+}
+.form-row.flush-bottom {
+    margin-bottom: 0;
+}
+.inline-error {
+    background: url( "../../images/inline-error.png" ) 0 0 no-repeat;
+    color: #C00;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 11px;
+    padding: 0 0 2px 15px;
+}
+p.inline-error, p.inline-error + input[type="text"] {
+    margin-top: 5px;
+}
+textarea.inline-error {
+    padding: 3px 4px;
+}
+.modal-actions .symphony {
+    margin-right: 10px;
+}
+.modal-actions .cancel-modal {
+    cursor: pointer;
+}
+hr {
+    background: none repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #CCC;
+    color: transparent;
+}
+div.inSession > div.btn-bg > input{
+    color:red;
+}
+
+#storage-widget {
+    font-size:11px;
+    width:151px;
+    margin:12px auto ;
+   
+}
+
+#storage-widget h2 {
+    color:#333;
+    font-size:14px;
+    font-weight:700;
+    margin:0 0 10px;
+}
+
+#storage-widget dd {
+    margin:2px 0 10px;
+}
+
+#storage-widget .storage-usage,#storage-widget .storage-usage span {
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+}
+
+#storage-widget .storage-usage {
+    background-color:#beddf9;
+    background:linear-gradient(top,#beddf90%,#e2f0fb100%);
+    border:1px solid #95B6D7;
+    border-top-color:#5E8EBF;
+    border-bottom-color:#76ADE5;
+    overflow:hidden;
+    text-align:center;
+    padding:0;
+}
+
+#storage-widget .storage-usage span {
+    background:transparent url("../../images/progressbar-blue.png") no-repeat 0 0;
+    display:block;
+    font-weight:700;
+    text-shadow:#FFF 0 1px 1px;
+    margin:0;
+    padding:3px 0 1px;
+}
+
+#storage-widget .storage-usage.max {
+    border-color:#fb3300 #f65b18 #ff5226;
+}
+
+#storage-widget .max span {
+    background:#fe9999 url("../../images/progressbar-red.png") no-repeat 0 0;
+    color:#5A2221;
+}
+
+#storage-widget .aside,#storage-widget dl {
+    margin:0;
+}
+
+
+/* IE Styles */
+
+.lt-ie10 .form-row input[type="text"], .form-row select, .form-row input[type="email"], .form-row input[type="password"] {
+    font-size: .9em;
+}
+.lt-ie10 .col-select {
+    opacity: 1;
+}
+.lt-ie10 .col-select span {
+    height: 16px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding: 4px 10px;
+    text-overflow: ellipsis;
+}
+.lt-ie10 label.inline {
+    vertical-align: -25%;
+}
+.lt-ie9 .symphony + a.cancel {
+    margin-left: 5px;
+    vertical-align: 5%;
+}
+.lt-ie8 pre {
+    font-family: arial, helvetica, verdana, sans-serif;
+}
+.lt-ie8 .form-row label.inline {
+    display: inline-block;
+    margin-top: 3px;
+}
+.lt-ie8 .symphony + a.cancel {
+    margin-left: 10px;
+    vertical-align: 30%;
+}
+.lt-ie8 input[type="text"] {
+    font-size: 11px;
+}
+.lt-ie8 ul.inline-links li {
+    line-height: 10px;
+}
+.lt-ie8 .remove {
+    display: block;
+    width: 16px;
+}
+.lt-ie8 .share,
+.lt-ie8 .email {
+    display: block;
+}
+.lt-ie8 hr.section-separator {
+    color: #eee;
+    height: 1px;
+}
+
+
+ul.inviteActions a {
+    padding-left: 20px;
+    display: inline-block;
+    overflow: hidden;
+    background: url("../../images/share_buttons.png") transparent no-repeat 0 0;
+    text-decoration: none;
+    margin-top: 8px;
+}
+ul.inviteActions a:hover {
+    text-decoration: underline;
+}
+ul.inviteActions a.twitter-share-button {
+    background-position: 0 -64px;
+}
+ul.inviteActions a.facebook-feed-dialog {
+    background-position: 0 -96px;
+}
+ul.inviteActions a.linkedin-share-article {
+    background-position: 0 -128px;
+}
+#facebookSelectProfileOrPageContent li {
+    border-bottom: 1px solid #D9D9E9;
+    margin: 6px 0;
+    padding-bottom: 6px;
+}
+#facebookSelectProfileOrPageContent li:first-child {
+    border-top: 1px solid #D9D9E9;
+    padding-top: 6px;
+}
+#facebookSelectProfileOrPageContent li a {
+    background: transparent no-repeat 0 0;
+    color: #3B5998;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    height: 35px;
+    padding: 15px 0 0 60px;
+    text-decoration: none;
+}
+#facebookSelectProfileOrPageContent li a:hover {
+    background-color: #E9E9F9;
+}
+#facebookModalWindowLoggedIn {
+    float: left;
+}
+#facebookModalWindow .loading {
+    background: url(/images/progress.gif) no-repeat center 50px;
+    height: 90px;
+}
+#facebookModalWindow .loaded p {
+    padding-top: 10px;
+}
