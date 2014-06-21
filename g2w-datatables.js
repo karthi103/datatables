@@ -32,7 +32,7 @@ function getDatatablesConf(ajaxUrl, pageSize, timeout, language, buildColumnDefs
         "drawCallback": function () {
             customTableCell();
             customTableFooter();
-            customSortArrows();
+           // customSortArrows();
         },
         "oLanguage": {
             "sSearch": "",
