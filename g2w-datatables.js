@@ -36,14 +36,6 @@ function getDatatablesConf(ajaxUrl, pageSize, timeout, language, buildColumnDefs
         },
         "oLanguage": {
             "sSearch": "",
-            "sInfo": "<strong>"+language.info+"</strong>",
-            "sInfoEmpty":"<strong>"+ language.emptyInfo+"</strong>",
-            "sEmptyTable":language.emptyTable,
-            "sZeroRecords":language.zeroRecords,
-            "oPaginate": {
-                "sNext": '<img src="/images/page-next.png">',
-                "sPrevious": '<img src="/images/page-prev.png">'
-            }
         },
         "iDisplayLength": pageSize,
         "deferRender": true
