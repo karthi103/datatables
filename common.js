@@ -248,7 +248,6 @@ jQuery(function($) {
         if (!$(this).attr("maxlength")) $(this).attr("maxlength", 2048);
     });
 
-    $('input.maxCharLimit, textarea').charCount();
 
     $( ".tab-list" ).tabList();
 
@@ -281,15 +280,3 @@ jQuery(function($) {
     };
 })(jQuery);
 
-//add custom jQuery validation "noxss"
-(function($) {
-    //keep this in sync with com.citrix.spine.web.editors.RejectHtmlStringEditor.DEFAULT_FILTER
-    var re = new RegExp(".*[<>].*" + // Simple tags
-        "|" +
-        ".*\\\\\\d+.*" + // Unicode escaped
-        "|" +
-        ".*&#x?\\d*?;.*"); // Decimal entities
-    jQuery.validator.addMethod("noxss", function(value, element) { 
-        return !re.test(value); 
-      }, $.getMessage("validation.invalidChars"));
-})(jQuery)
