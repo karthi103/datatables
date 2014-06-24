@@ -162,6 +162,6 @@ $.fn.dataTable.ajaxCall = function (opts) {
 
 jQuery( document ).ready( function() {
 
-	JQuery.g2wDatatables();
+	jQuery.g2wDatatables();
 
 } );
