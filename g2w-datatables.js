@@ -158,3 +158,10 @@ $.fn.dataTable.ajaxCall = function (opts) {
 
 	};
 }(jQuery));
+
+
+jQuery( document ).ready( function() {
+
+	JQuery.g2wDatatables();
+
+} );
