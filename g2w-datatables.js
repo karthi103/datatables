@@ -2,7 +2,7 @@
 	
 	$.g2wDatatables = function( method ) {
 		
-  function loadMessages(locale) {
+    loadMessages : function (locale) {
     jQuery.i18n.properties({
         name: '-g2w-ui',
         path: '/messages/messages',
@@ -12,7 +12,7 @@
 },
 
 //format the time in millis as per timezone and data format
-function formatDateTime(millis, timeZone, dateFormat) {
+formatDateTime : function (millis, timeZone, dateFormat) {
     try {
         return moment(millis).tz(timeZone).format(dateFormat);
     } catch(error) {
@@ -21,7 +21,7 @@ function formatDateTime(millis, timeZone, dateFormat) {
 },
 
 //define default options for datatables
-getDatatablesConf: function(ajaxUrl, pageSize, timeout, language, buildColumnDefs, buildColumns, buildRequest) {
+getDatatablesConf : function(ajaxUrl, pageSize, timeout, language, buildColumnDefs, buildColumns, buildRequest) {
     return {
         "processing": true,
         "serverSide": true,
@@ -55,7 +55,7 @@ getDatatablesConf: function(ajaxUrl, pageSize, timeout, language, buildColumnDef
     }
 },
 
-function customTableCell() {
+customTableCell : function () {
     $(".dataTable tbody td").css({
                 "border": "0",
                 "border-top": "1px solid #D7D9D9",
@@ -63,14 +63,14 @@ function customTableCell() {
             });
 },
 
-function customSortArrows() {
+customSortArrows : function () {
     $("table.dataTable thead .sorting_desc").css("background","url('styles/images/sort_desc.png') no-repeat scroll 80px 15px");
     $("table.dataTable thead .sorting").css("background","url('styles/images/sort_both.png') no-repeat scroll 80px 12px");
     $("table.dataTable thead .sorting_asc").css("background","url('styles/images/sort_asc.png') no-repeat scroll 80px 15px");
 },
 
 //customize datatables default searchbar
-function customSearchBar(titleText) {
+customSearchBar : function (titleText) {
     //For search bar
     $("#webinar-history-table_length").css("display", "none");
     $("#webinar-history-table_filter").removeClass("dataTables_filter").addClass("search-container").css({
@@ -87,12 +87,12 @@ function customSearchBar(titleText) {
         .searchField();
 },
 
-function customTableHeader() {
+customTableHeader : function () {
     //for table header    
     $(".dataTable thead th").css("border-bottom", "0");
 },
 
-function customTableFooter() {
+customTableFooter : function () {
     //for table footer
     $(".dataTable").removeClass("no-footer");
     $(".dataTables_wrapper .dataTables_paginate .paginate_button").css("padding","12px 0 0 2px").hover(
@@ -109,7 +109,7 @@ function customTableFooter() {
 },
 
 //customize datatables css
-function customizeDataTables(titleText) {
+customizeDataTables : function (titleText) {
     customSearchBar(titleText);
     customTableHeader();
     customTableCell();
@@ -117,7 +117,7 @@ function customizeDataTables(titleText) {
     customSortArrows();
 },
 
-function handleAjaxError( xhr, textStatus, error ) {
+handleAjaxError : function ( xhr, textStatus, error ) {
     if(xhr.status == 0) {
         location.reload();  
     } else {
