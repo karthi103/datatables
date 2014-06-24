@@ -1,9 +1,7 @@
 (function( $ ) {
 	
-	$.g2wDatatables = function( method ) {
-		
- methods = {
- 
+	$.g2wDatatables = {
+		 
      loadMessages : function (locale) {
     jQuery.i18n.properties({
         name: '-g2w-ui',
@@ -128,7 +126,7 @@ handleAjaxError : function ( xhr, textStatus, error ) {
 }
 
 
-};
+
 	};
 }(jQuery));
 
