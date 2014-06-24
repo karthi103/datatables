@@ -130,4 +130,3 @@ handleAjaxError : function ( xhr, textStatus, error ) {
 	};
 }(jQuery));
 
-//
