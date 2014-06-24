@@ -1,4 +1,13 @@
-(function( $ ) {
+(function (factory) {
+    //console.log('loading ea');
+    if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define(['jquery'], factory);
+    } else {
+        // Browser globals
+        factory(jQuery, window.ea);
+    }
+}(function( $, _ ) {
 	
 	$.g2wDatatables = {
 		 
@@ -128,5 +137,5 @@ handleAjaxError : function ( xhr, textStatus, error ) {
 
 
 	};
-}(jQuery));
+}));
 
