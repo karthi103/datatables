@@ -1,4 +1,8 @@
-function loadMessages(locale) {
+(function( $ ) {
+	
+	$.g2wDatatables = function( method ) {
+		
+  function loadMessages(locale) {
     jQuery.i18n.properties({
         name: '-g2w-ui',
         path: '/messages/messages',
@@ -32,11 +36,15 @@ function getDatatablesConf(ajaxUrl, pageSize, timeout, language, buildColumnDefs
         "drawCallback": function () {
             customTableCell();
             customTableFooter();
-            //commenting out
-           // customSortArrows();
+            customSortArrows();
         },
         "oLanguage": {
             "sSearch": "",
+            "sProcessing": "<img src='https://global.gotowebinar.com/images/spinner.gif'> ",
+            "oPaginate": {
+                "sNext": '<img src="https://global.gotowebinar.com/images/page-next.png">',
+                "sPrevious": '<img src="https://global.gotowebinar.com/images/page-prev.png">'
+            }
         },
         "iDisplayLength": pageSize,
         "deferRender": true
@@ -147,3 +155,6 @@ $.fn.dataTable.ajaxCall = function (opts) {
         });
     }
 };
+
+	};
+}(jQuery));
