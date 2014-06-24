@@ -21,7 +21,7 @@ function formatDateTime(millis, timeZone, dateFormat) {
 }
 
 //define default options for datatables
-function getDatatablesConf(ajaxUrl, pageSize, timeout, language, buildColumnDefs, buildColumns, buildRequest) {
+getDatatablesConf: function(ajaxUrl, pageSize, timeout, language, buildColumnDefs, buildColumns, buildRequest) {
     return {
         "processing": true,
         "serverSide": true,
@@ -40,10 +40,14 @@ function getDatatablesConf(ajaxUrl, pageSize, timeout, language, buildColumnDefs
         },
         "oLanguage": {
             "sSearch": "",
-            "sProcessing": "<img src='https://global.gotowebinar.com/images/spinner.gif'> ",
+            "sProcessing": "<img src='/images/spinner.gif'> ",
+            "sInfo": "<strong>"+language.info+"</strong>",
+            "sInfoEmpty":"<strong>"+ language.emptyInfo+"</strong>",
+            "sEmptyTable":language.emptyTable,
+            "sZeroRecords":language.zeroRecords,
             "oPaginate": {
-                "sNext": '<img src="https://global.gotowebinar.com/images/page-next.png">',
-                "sPrevious": '<img src="https://global.gotowebinar.com/images/page-prev.png">'
+                "sNext": '<img src="/images/page-next.png">',
+                "sPrevious": '<img src="/images/page-prev.png">'
             }
         },
         "iDisplayLength": pageSize,
