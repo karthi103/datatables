@@ -130,11 +130,3 @@ handleAjaxError : function ( xhr, textStatus, error ) {
 	};
 }(jQuery));
 
-//sample
-
-jQuery( document ).ready( function() {
-    
-    
-	jQuery.g2wDatatables();
-
-} );
