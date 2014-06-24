@@ -9,7 +9,7 @@
         mode: 'both',
         language: locale
     });
-}
+},
 
 //format the time in millis as per timezone and data format
 function formatDateTime(millis, timeZone, dateFormat) {
@@ -18,7 +18,7 @@ function formatDateTime(millis, timeZone, dateFormat) {
     } catch(error) {
         return moment(millis).tz("GMT").format(dateFormat);
     }
-}
+},
 
 //define default options for datatables
 getDatatablesConf: function(ajaxUrl, pageSize, timeout, language, buildColumnDefs, buildColumns, buildRequest) {
@@ -53,7 +53,7 @@ getDatatablesConf: function(ajaxUrl, pageSize, timeout, language, buildColumnDef
         "iDisplayLength": pageSize,
         "deferRender": true
     }
-}
+},
 
 function customTableCell() {
     $(".dataTable tbody td").css({
@@ -61,13 +61,13 @@ function customTableCell() {
                 "border-top": "1px solid #D7D9D9",
                 "padding": "10px 18px"
             });
-}
+},
 
 function customSortArrows() {
     $("table.dataTable thead .sorting_desc").css("background","url('styles/images/sort_desc.png') no-repeat scroll 80px 15px");
     $("table.dataTable thead .sorting").css("background","url('styles/images/sort_both.png') no-repeat scroll 80px 12px");
     $("table.dataTable thead .sorting_asc").css("background","url('styles/images/sort_asc.png') no-repeat scroll 80px 15px");
-}
+},
 
 //customize datatables default searchbar
 function customSearchBar(titleText) {
@@ -85,12 +85,12 @@ function customSearchBar(titleText) {
     $("input[type='search']")
         .clearField()
         .searchField();
-}
+},
 
 function customTableHeader() {
     //for table header    
     $(".dataTable thead th").css("border-bottom", "0");
-}
+},
 
 function customTableFooter() {
     //for table footer
@@ -106,7 +106,7 @@ function customTableFooter() {
         "text-align": "right",
         "width": "93%"});
     
-}
+},
 
 //customize datatables css
 function customizeDataTables(titleText) {
@@ -115,7 +115,7 @@ function customizeDataTables(titleText) {
     customTableCell();
     customTableFooter();
     customSortArrows();
-}
+},
 
 function handleAjaxError( xhr, textStatus, error ) {
     if(xhr.status == 0) {
