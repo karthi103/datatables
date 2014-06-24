@@ -121,40 +121,7 @@ function handleAjaxError( xhr, textStatus, error ) {
     }
 }
 
-//adapt ajax requests and response to suit datatables
-$.fn.dataTable.ajaxCall = function (opts) {
-    // Configuration options
-    var conf = $.extend({
-        url: '', // script url
-        timeout: 30000,
-        data: null, // function or object with parameters to send to the server
-        // matching how `ajax.data` works in DataTables
-        method: 'GET' // Ajax HTTP method
-    }, opts);
-    return function (request, drawCallback, settings) {
-        paginationRequest = conf.buildRequest(request);
-        settings.jqXHR = $.ajax({
-            "type": conf.method,
-            "url": conf.url,
-            "cache":false,
-            "timeout": conf.timeout,
-            "headers": {
-                        "CacheControl":"no-cache",
-                        "Pragma":"no-cache",
-                        "Expires":"-1"
-                        },
-            "error": handleAjaxError,
-            "data": paginationRequest,
-            "dataType": "json",
-            "success": function (json) {
-                $.extend(true, {}, json);
-                json.recordsTotal = json.total;
-                json.recordsFiltered = json.total;
-                drawCallback(json);
-            }
-        });
-    }
-};
+
 
 	};
 }(jQuery));
@@ -162,7 +129,8 @@ $.fn.dataTable.ajaxCall = function (opts) {
 //sample
 
 jQuery( document ).ready( function() {
-
+    
+    
 	jQuery.g2wDatatables();
 
 } );
