@@ -243,7 +243,17 @@
 }(jQuery) );
 
 
-jQuery(function($) {
+
+(function (factory) {
+    
+    if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define('tablist', ['jquery', 'web-library'], factory);
+    } else {
+        // Browser globals
+        factory(jQuery);
+    }
+}(function($) {
     $('textarea').each(function() {
         if (!$(this).attr("maxlength")) $(this).attr("maxlength", 2048);
     });
@@ -278,5 +288,5 @@ jQuery(function($) {
         });
         return v;
     };
-})(jQuery);
+}));
 
