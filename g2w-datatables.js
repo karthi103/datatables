@@ -2,7 +2,7 @@
     //console.log('loading ea');
     if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
-        define(['jquery', 'jquery.dataTables'], factory);
+        define('g2wdata', ['jquery', 'jquery.dataTables'], factory);
     } else {
         // Browser globals
         factory(jQuery, window.ea);
@@ -25,7 +25,7 @@ formatDateTime : function (millis, timeZone, dateFormat) {
     try {
         return moment(millis).tz(timeZone).format(dateFormat);
     } catch(error) {
-        return moment(millis).tz("GMT").format(dateFormat);
+        return moment(millis).tz("GMT".format(dateFormat);
     }
 },
 
