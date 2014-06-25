@@ -8,7 +8,7 @@
         factory(jQuery, window.ea);
     }
 }(function( $, _ ) {
-	
+//test	
 	$.g2wDatatables = {
 		 
      loadMessages : function (locale) {
