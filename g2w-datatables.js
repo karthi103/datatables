@@ -2,7 +2,7 @@
     //console.log('loading ea');
     if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
-        define(['jquery'], factory);
+        define(['jquery', 'jquery.dataTables'], factory);
     } else {
         // Browser globals
         factory(jQuery, window.ea);
@@ -49,14 +49,14 @@ getDatatablesConf : function(ajaxUrl, pageSize, timeout, language, buildColumnDe
         },
         "oLanguage": {
             "sSearch": "",
-            "sProcessing": "<img src='/images/spinner.gif'> ",
+            "sProcessing": "<img src='https://global.gotowebinar.com/images/spinner.gif'> ",
             "sInfo": "<strong>"+language.info+"</strong>",
             "sInfoEmpty":"<strong>"+ language.emptyInfo+"</strong>",
             "sEmptyTable":language.emptyTable,
             "sZeroRecords":language.zeroRecords,
             "oPaginate": {
-                "sNext": '<img src="/images/page-next.png">',
-                "sPrevious": '<img src="/images/page-prev.png">'
+                "sNext": '<img src="https://global.gotowebinar.com/images/page-next.png">',
+                "sPrevious": '<img src="https://global.gotowebinar.com/images/page-prev.png">'
             }
         },
         "iDisplayLength": pageSize,
