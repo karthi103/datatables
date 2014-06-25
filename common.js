@@ -270,7 +270,7 @@
     jQuery( ".error-banner" ).animateMessage();
 
     jQuery( ".confirmation-banner" ).not( ".deferShow" ).animateMessage("sheet");
-});
+}));
 
 (function($) {
     window.toggleCheckBoxes = function(on, cls) {
