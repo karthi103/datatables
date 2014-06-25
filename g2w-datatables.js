@@ -20,14 +20,15 @@
     });
 },
 
+//UNCOMMENT THIS
 //format the time in millis as per timezone and data format
-formatDateTime : function (millis, timeZone, dateFormat) {
-    try {
-        return moment(millis).tz(timeZone).format(dateFormat);
-    } catch(error) {
-        return moment(millis).tz("GMT".format(dateFormat);
-    }
-},
+//formatDateTime : function (millis, timeZone, dateFormat) {
+  //  try {
+    //    return moment(millis).tz(timeZone).format(dateFormat);
+    // } catch(error) {
+     //   return moment(millis).tz("GMT".format(dateFormat);
+   // }
+//},
 
 //define default options for datatables
 getDatatablesConf : function(ajaxUrl, pageSize, timeout, language, buildColumnDefs, buildColumns, buildRequest) {
