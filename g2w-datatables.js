@@ -9,7 +9,7 @@
     }
 }(function( $, _ ) {
 //test	
-	$.g2wDatatables = {
+	return $.g2wDatatables = {
 		 
      loadMessages : function (locale) {
     jQuery.i18n.properties({
