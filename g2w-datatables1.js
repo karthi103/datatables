@@ -110,9 +110,9 @@ getDatatablesConf : function(ajaxUrl, pageSize, timeout, language, buildColumnDe
         "columnDefs": buildColumnDefs(),
         "columns": buildColumns(),
         "drawCallback": function () {
-            this.customTableCell();
-            this.customTableFooter();
-            this.customSortArrows();
+            customTableCell();
+            customTableFooter();
+            customSortArrows();
         },
         "oLanguage": {
             "sSearch": "",
