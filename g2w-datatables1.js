@@ -9,6 +9,10 @@
         language: locale
     });
 },
+     
+    callme : function(calledFrom){
+       alert(calledFrom);   
+    },
 
 //UNCOMMENT THIS
 //format the time in millis as per timezone and data format
