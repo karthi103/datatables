@@ -24,40 +24,6 @@
    // }
 //},
 
-//define default options for datatables
-getDatatablesConf : function(ajaxUrl, pageSize, timeout, language, buildColumnDefs, buildColumns, buildRequest) {
-    return {
-        "processing": true,
-        "serverSide": true,
-        "pagingType": "simple",
-        "ajax": $.fn.dataTable.ajaxCall({
-            "url": ajaxUrl,
-            "buildRequest": buildRequest,
-            "timeout": timeout
-        }),
-        "columnDefs": buildColumnDefs(),
-        "columns": buildColumns(),
-        "drawCallback": function () {
-            this.customTableCell();
-            this.customTableFooter();
-            this.customSortArrows();
-        },
-        "oLanguage": {
-            "sSearch": "",
-            "sProcessing": "<img src='https://global.gotowebinar.com/images/spinner.gif'> ",
-            "sInfo": "<strong>"+language.info+"</strong>",
-            "sInfoEmpty":"<strong>"+ language.emptyInfo+"</strong>",
-            "sEmptyTable":language.emptyTable,
-            "sZeroRecords":language.zeroRecords,
-            "oPaginate": {
-                "sNext": '<img src="https://global.gotowebinar.com/images/page-next.png">',
-                "sPrevious": '<img src="https://global.gotowebinar.com/images/page-prev.png">'
-            }
-        },
-        "iDisplayLength": pageSize,
-        "deferRender": true
-    }
-},
 
 customTableCell : function () {
     $(".dataTable tbody td").css({
@@ -127,8 +93,43 @@ handleAjaxError : function ( xhr, textStatus, error ) {
     } else {
         handleError();
     }
-}
+},
 
+
+//define default options for datatables
+getDatatablesConf : function(ajaxUrl, pageSize, timeout, language, buildColumnDefs, buildColumns, buildRequest) {
+    return {
+        "processing": true,
+        "serverSide": true,
+        "pagingType": "simple",
+        "ajax": $.fn.dataTable.ajaxCall({
+            "url": ajaxUrl,
+            "buildRequest": buildRequest,
+            "timeout": timeout
+        }),
+        "columnDefs": buildColumnDefs(),
+        "columns": buildColumns(),
+        "drawCallback": function () {
+            this.customTableCell();
+            this.customTableFooter();
+            this.customSortArrows();
+        },
+        "oLanguage": {
+            "sSearch": "",
+            "sProcessing": "<img src='https://global.gotowebinar.com/images/spinner.gif'> ",
+            "sInfo": "<strong>"+language.info+"</strong>",
+            "sInfoEmpty":"<strong>"+ language.emptyInfo+"</strong>",
+            "sEmptyTable":language.emptyTable,
+            "sZeroRecords":language.zeroRecords,
+            "oPaginate": {
+                "sNext": '<img src="https://global.gotowebinar.com/images/page-next.png">',
+                "sPrevious": '<img src="https://global.gotowebinar.com/images/page-prev.png">'
+            }
+        },
+        "iDisplayLength": pageSize,
+        "deferRender": true
+    }
+}
 
 
 	};
