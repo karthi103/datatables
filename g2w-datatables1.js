@@ -1,6 +1,8 @@
 (function( $, _ ) {
  $.fn.g2wDatatables = {
-		 
+	
+	 var self = this;
+	 	 
      loadMessages : function (locale) {
     jQuery.i18n.properties({
         name: '-g2w-ui',
@@ -110,9 +112,9 @@ getDatatablesConf : function(ajaxUrl, pageSize, timeout, language, buildColumnDe
         "columnDefs": buildColumnDefs(),
         "columns": buildColumns(),
         "drawCallback": function () {
-            customTableCell();
-            customTableFooter();
-            customSortArrows();
+            self.customTableCell();
+            self.customTableFooter();
+            self.customSortArrows();
         },
         "oLanguage": {
             "sSearch": "",
