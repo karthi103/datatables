@@ -1,7 +1,7 @@
 (function( $, _ ) {
  $.fn.g2wDatatables = {
 	
-	 var self = this;
+
 	 	 
      loadMessages : function (locale) {
     jQuery.i18n.properties({
