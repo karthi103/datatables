@@ -112,9 +112,9 @@ getDatatablesConf : function(ajaxUrl, pageSize, timeout, language, buildColumnDe
         "columnDefs": buildColumnDefs(),
         "columns": buildColumns(),
         "drawCallback": function () {
-            self.customTableCell();
-            self.customTableFooter();
-            self.customSortArrows();
+            $.fn.g2wDatatables.customTableCell();
+           $.fn.g2wDatatables.customTableFooter();
+            $.fn.g2wDatatables.customSortArrows();
         },
         "oLanguage": {
             "sSearch": "",
